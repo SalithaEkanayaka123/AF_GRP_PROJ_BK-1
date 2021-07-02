@@ -1,17 +1,10 @@
 package com.testing.demo.Controller;
-
 import com.testing.demo.Model.Request.DownloadCategory;
-import com.testing.demo.Model.Request.Users;
 import com.testing.demo.Service.DownloadService;
-import com.testing.demo.Service.UserService;
-import com.testing.demo.Service.UserValidation;
-import com.testing.demo.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000")

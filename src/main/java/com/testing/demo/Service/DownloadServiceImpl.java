@@ -14,7 +14,7 @@ public class DownloadServiceImpl implements DownloadService {
 
     @Override
     public DownloadCategory createDownloadCategory(DownloadCategory downloadCategory) {
-        //CREATE NEW CATEGORY.
+        //CREATE NEW DOWNLOAD CATEGORY.
         DownloadCategory category = new DownloadCategory();
         category.setDownloadHeader(downloadCategory.getDownloadHeader());
         category.setDownloadDescription(downloadCategory.getDownloadDescription());
@@ -27,7 +27,7 @@ public class DownloadServiceImpl implements DownloadService {
     @Override
     public String deleteDownloadCategory(String type) {
         mongoTemplate.remove(new Query(where("type").is(type)), DownloadCategory.class);
-        return "User id is " + type;
+        return "Download category id is " + type;
     }
 
     @Override
